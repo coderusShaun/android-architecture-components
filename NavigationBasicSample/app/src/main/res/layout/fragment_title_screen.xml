@@ -39,7 +39,7 @@
         android:textColor="@color/colorAccent"
         android:textSize="62sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/title_image"
+        app:layout_constraintBottom_toTopOf="@+id/titlePager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -61,10 +61,10 @@
         app:layout_constraintBottom_toTopOf="@+id/leaderboard_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_image" />
+        app:layout_constraintTop_toBottomOf="@+id/titlePager" />
 
-    <ImageView
-        android:id="@+id/title_image"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/titlePager"
         android:layout_width="362dp"
         android:layout_height="225dp"
         android:layout_marginStart="8dp"
