@@ -87,14 +87,6 @@ class MyAdapter(private val myDataset: Array<String>) :
 
         holder.item.findViewById<ImageView>(R.id.user_avatar_image)
                 .setImageResource(listOfAvatars[position])
-
-        holder.item.setOnClickListener {
-            val bundle = bundleOf("userName" to myDataset[position])
-
-            Navigation.findNavController(holder.item).navigate(
-                    R.id.action_leaderboard_to_userProfile,
-                bundle)
-        }
     }
 
     // Return the size of your dataset (invoked by the layout manager)
